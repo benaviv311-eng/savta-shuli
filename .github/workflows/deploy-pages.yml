@@ -23,6 +23,10 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           enablement: true
+      - name: Build the approved comic page
+        run: |
+          python -m pip install --disable-pip-version-check Pillow
+          python scripts/build_comic.py
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
