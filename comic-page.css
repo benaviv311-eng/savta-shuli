@@ -19,3 +19,8 @@
 #comics .comic-story-link{margin:15px auto 0;padding:7px 10px}
 #comics .comic-story-link button{border:0;color:#79515d;background:none;text-decoration:underline;text-underline-offset:3px;font:inherit;cursor:pointer}
 #comics .comic-story-link button:focus-visible{outline:3px solid #bb8390;outline-offset:3px}
+
+#braidsStory .comic-section-link{text-align:center;margin:19px 0 9px}
+#braidsStory .comic-section-link button{border:1px solid #cda9b3;background:#fff7fa;color:#794857;border-radius:30px;padding:10px 16px;font-size:14px;font-weight:700;cursor:pointer}
+#braidsStory .comic-section-link button:hover{background:#f9e2e8}
+#braidsStory .comic-section-link button:focus-visible{outline:3px solid #bb8390;outline-offset:3px}
