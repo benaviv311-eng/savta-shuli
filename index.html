@@ -6,8 +6,8 @@
 <script>(async()=>{try{
 const parts=await Promise.all(Array.from({length:19},async(_,i)=>{const n=String(i).padStart(2,'0');const r=await fetch('v2/parts/'+n+'.txt',{cache:'no-cache'});if(!r.ok)throw new Error('Missing album part '+n);return r.text()}));
 const html=parts.join('').replaceAll('מלין','מילן');
-const css='<link rel="stylesheet" href="milan-slideshow.css?v=1">';
-const script='<scr'+'ipt src="milan-slideshow.js?v=1"></scr'+'ipt>';
+const css='<link rel="stylesheet" href="milan-slideshow.css?v=1">'+'<link rel="stylesheet" href="milan-storybook.css?v=1">';
+const script='<scr'+'ipt src="milan-slideshow.js?v=1"></scr'+'ipt>'+'<scr'+'ipt src="milan-storybook.js?v=1"></scr'+'ipt>';
 const enhanced=html.replace('</head>',css+'</head>').replace('</body>',script+'</body>');
 if(!enhanced.includes('מילן חן')||!html.includes('צמה לכל יום')||!html.includes('סבתא שולי'))throw new Error('Incomplete album');
 document.open();document.write(enhanced);document.close();
