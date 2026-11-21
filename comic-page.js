@@ -40,4 +40,7 @@
   const book=story.querySelector('.storybook-book');
   if(book)story.insertBefore(feature,book);
   else story.append(feature);
+  if(new URLSearchParams(location.search).has('comic')){
+    window.setTimeout(()=>feature.scrollIntoView({behavior:'auto',block:'start'}),450);
+  }
 })();
