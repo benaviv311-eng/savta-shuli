@@ -1,15 +1,16 @@
 (function(){
   'use strict';
   const story=document.getElementById('braidsStory');
-  if(!story||document.getElementById('milenComicPage'))return;
+  const shelf=document.getElementById('comicsShelf');
+  if(!story||!shelf||document.getElementById('milenComicPage'))return;
   const feature=document.createElement('section');
   feature.id='milenComicPage';
   feature.className='comic-onepage';
   feature.setAttribute('aria-label','עמוד קומיקס מאוחד: צמה לכל יום');
   const title=document.createElement('h4');
-  title.textContent='עמוד הקומיקס המאוחד';
+  title.textContent='צמה לכל יום';
   const detail=document.createElement('p');
-  detail.textContent='ארבעת הפאנלים שאושרו, יחד בעמוד אחד – בלי לשנות אף איור.';
+  detail.textContent='הזיכרון המאויר של מילן וסבתא שולי · ארבעת הפאנלים המאושרים בעמוד אחד';
   const imgLink=document.createElement('a');
   imgLink.className='comic-onepage-image';
   imgLink.href='comic-milen.png';
@@ -33,14 +34,31 @@
   save.download='צמה_לכל_יום_עמוד_קומיקס.png';
   save.textContent='שמירת עמוד הקומיקס';
   actions.append(full,save);
-  const divider=document.createElement('div');
-  divider.className='comic-divider';
-  divider.textContent='להמשך: ספרון דפדוף בין ארבעת הפאנלים';
-  feature.append(title,detail,imgLink,actions,divider);
-  const book=story.querySelector('.storybook-book');
-  if(book)story.insertBefore(feature,book);
-  else story.append(feature);
+  const back=document.createElement('div');
+  back.className='comic-story-link';
+  const backButton=document.createElement('button');
+  backButton.type='button';
+  backButton.textContent='לספרון הדפדוף בכרטיס של מילן';
+  backButton.addEventListener('click',()=>{
+    selectTab('people');
+    window.setTimeout(()=>story.scrollIntoView({behavior:'smooth',block:'start'}),75);
+  });
+  back.append(backButton);
+  feature.append(title,detail,imgLink,actions,back);
+  shelf.append(feature);
+  const link=document.createElement('div');
+  link.className='comic-section-link';
+  const openComics=document.createElement('button');
+  openComics.type='button';
+  openComics.textContent='לצפייה בעמוד הקומיקס המאוחד במדור עמודי קומיקס';
+  openComics.addEventListener('click',()=>{
+    selectTab('comics');
+    window.setTimeout(()=>feature.scrollIntoView({behavior:'smooth',block:'start'}),75);
+  });
+  link.append(openComics);
+  story.append(link);
   if(new URLSearchParams(location.search).has('comic')){
+    selectTab('comics');
     window.setTimeout(()=>feature.scrollIntoView({behavior:'auto',block:'start'}),450);
   }
 })();
