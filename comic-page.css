@@ -1,12 +1,21 @@
-#braidsStory .comic-onepage{max-width:830px;margin:21px auto 32px;text-align:center;padding:16px 15px 19px;border:1px solid #e9d1ce;border-radius:20px;background:linear-gradient(145deg,#fffdf8,#f9e9e3);box-shadow:0 9px 26px rgba(81,55,57,.09)}
-#braidsStory .comic-onepage h4{font-size:clamp(19px,3vw,24px);margin:2px 0 6px;color:#694650}
-#braidsStory .comic-onepage p{color:#806b6a;font-size:14px;margin:0 0 13px}
-#braidsStory .comic-onepage a.comic-onepage-image{display:block;background:#fbf6eb;border:1px solid #ccb8ac;border-radius:11px;overflow:hidden;cursor:zoom-in;line-height:0}
-#braidsStory .comic-onepage a.comic-onepage-image img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:contain}
-#braidsStory .comic-onepage .comic-actions{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:14px}
-#braidsStory .comic-onepage .comic-actions a{display:inline-block;background:#885e6c;color:#fff;text-decoration:none;border-radius:26px;padding:9px 18px;font-size:14px;font-weight:700}
-#braidsStory .comic-onepage .comic-actions a:last-child{background:#fff;border:1px solid #d7bfc5;color:#805765}
-#braidsStory .comic-onepage .comic-actions a:hover{filter:brightness(.96)}
-#braidsStory .comic-onepage a:focus-visible{outline:3px solid #bb8390;outline-offset:3px}
-#braidsStory .comic-onepage .comic-divider{font-size:14px;color:#7b6670;padding:15px 0 0;font-weight:700}
-@media(max-width:560px){#braidsStory .comic-onepage{padding:10px 9px 15px;margin:12px auto 24px}#braidsStory .comic-onepage .comic-actions a{font-size:13px;padding:9px 13px}}
+#comics .comic-onepage{max-width:830px;margin:21px auto 32px;text-align:center;padding:16px 15px 19px;border:1px solid #e9d1ce;border-radius:20px;background:linear-gradient(145deg,#fffdf8,#f9e9e3);box-shadow:0 9px 26px rgba(81,55,57,.09)}
+#comics .comic-onepage h4{font-size:clamp(19px,3vw,24px);margin:2px 0 6px;color:#694650}
+#comics .comic-onepage p{color:#806b6a;font-size:14px;margin:0 0 13px}
+#comics .comic-onepage a.comic-onepage-image{display:block;background:#fbf6eb;border:1px solid #ccb8ac;border-radius:11px;overflow:hidden;cursor:zoom-in;line-height:0}
+#comics .comic-onepage a.comic-onepage-image img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:contain}
+#comics .comic-onepage .comic-actions{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:14px}
+#comics .comic-onepage .comic-actions a{display:inline-block;background:#885e6c;color:#fff;text-decoration:none;border-radius:26px;padding:9px 18px;font-size:14px;font-weight:700}
+#comics .comic-onepage .comic-actions a:last-child{background:#fff;border:1px solid #d7bfc5;color:#805765}
+#comics .comic-onepage .comic-actions a:hover{filter:brightness(.96)}
+#comics .comic-onepage a:focus-visible{outline:3px solid #bb8390;outline-offset:3px}
+#comics .comic-onepage .comic-divider{font-size:14px;color:#7b6670;padding:15px 0 0;font-weight:700}
+@media(max-width:560px){#comics .comic-onepage{padding:10px 9px 15px;margin:12px auto 24px}#comics .comic-onepage .comic-actions a{font-size:13px;padding:9px 13px}}
+/* Comic pages now have their own top-level section and shelf. */
+#comics {min-height:65vh}
+#comics .comics-shelf{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;max-width:900px;margin:0 auto}
+#comics .comic-onepage{margin:5px auto 28px;max-width:800px;width:100%}
+#comics .comic-onepage h4{font-size:clamp(23px,4vw,32px)}
+#comics .comic-onepage .comic-divider{display:none}
+#comics .comic-story-link{margin:15px auto 0;padding:7px 10px}
+#comics .comic-story-link button{border:0;color:#79515d;background:none;text-decoration:underline;text-underline-offset:3px;font:inherit;cursor:pointer}
+#comics .comic-story-link button:focus-visible{outline:3px solid #bb8390;outline-offset:3px}
