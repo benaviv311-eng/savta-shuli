@@ -1,0 +1,18 @@
+/* מילן: גלריית פורטרטים מתחלפת */
+#malin .person-head{grid-template-columns:minmax(245px,340px) minmax(0,1fr);align-items:center}
+#malin .person-cover{width:100%;max-width:100%;height:395px;border-radius:17px;object-fit:contain;background:radial-gradient(ellipse at 50% 48%,#f8e0df,#f7eee6 70%);box-shadow:inset 0 0 0 1px #eadad4}
+.milan-carousel{width:100%;max-width:340px;margin:auto;min-width:0;direction:rtl}
+.milan-carousel-stage{position:relative;overflow:hidden;border-radius:17px}
+.milan-carousel-stage img{display:block}
+.milan-carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);border:1px solid #dcc7c7;background:#fffdf5e8;color:#794f5c;border-radius:50%;height:39px;width:39px;display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;z-index:1;box-shadow:0 2px 8px #42252022}
+.milan-carousel-arrow.prev{right:8px}.milan-carousel-arrow.next{left:8px}
+.milan-carousel-arrow:hover{background:white;color:#56323e}
+.milan-carousel-arrow:focus-visible,.milan-carousel-dots button:focus-visible{outline:3px solid #a66d7b;outline-offset:2px}
+.milan-carousel-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 3px 7px;color:#725960;font-size:13px}
+.milan-carousel-caption{font-weight:700}
+.milan-carousel-count{white-space:nowrap;direction:ltr;unicode-bidi:isolate;color:#8b7a77}
+.milan-carousel-dots{display:flex;justify-content:center;gap:10px;margin:5px auto 2px;direction:ltr}
+.milan-carousel-dots button{width:12px;height:12px;min-width:12px;border-radius:50%;padding:0;border:1px solid #cda9b3;background:#ecdae0}
+.milan-carousel-dots button[aria-current="true"]{background:#9c6375;border-color:#9c6375;transform:scale(1.16)}
+@media(prefers-reduced-motion:no-preference){.milan-photo-animate{animation:milanPhotoIn .35s ease-out}@keyframes milanPhotoIn{from{opacity:.65;transform:scale(.985)}to{opacity:1;transform:scale(1)}}}
+@media(max-width:720px){#malin .person-head{grid-template-columns:1fr}#malin .person-cover{height:380px}.milan-carousel{max-width:400px}}
