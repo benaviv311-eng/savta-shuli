@@ -27,6 +27,8 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: .
+      - name: Confirm artifact registration
+        run: sleep 20
       - name: Deploy to Pages
         id: deployment
         uses: actions/deploy-pages@v4
