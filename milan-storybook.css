@@ -1,0 +1,33 @@
+/* Storybook for Milen's four APPROVED illustrated panels. */
+#braidsStory .storybook-book{width:min(100%,980px);margin:22px auto 3px;direction:rtl}
+#braidsStory .storybook-cover{background:linear-gradient(125deg,#fffaf2 0%,#ffece9 55%,#f3e0e4 100%);border:1px solid #e9d0cc;border-radius:20px;padding:clamp(9px,2vw,22px);box-shadow:0 17px 35px #6b47482b,3px 6px 0 #f4e4db;position:relative}
+#braidsStory .storybook-cover::after{content:"";position:absolute;top:10px;bottom:10px;right:7px;width:5px;border-radius:9px;background:linear-gradient(#d8a6aa,#fff4e7,#d8a6aa);pointer-events:none;opacity:.75}
+#braidsStory .storybook-stage{position:relative;perspective:1200px;min-height:120px;isolation:isolate;overflow:hidden;border-radius:13px;background:#fff8ef;box-shadow:inset 0 0 0 1px #e9d9c8}
+#braidsStory .storybook-stage .panels{display:block!important;position:relative;width:100%;margin:0!important;padding:0!important}
+#braidsStory .storybook-stage .panel{display:none;margin:0!important;background:#fffdf7;border:1px solid #ecdcd0;box-shadow:none!important;border-radius:12px;overflow:hidden;backface-visibility:hidden;transform-style:preserve-3d}
+#braidsStory .storybook-stage .panel.storybook-active{display:block;position:relative}
+#braidsStory .storybook-stage .panel.storybook-exit{display:block;position:absolute;inset:0;z-index:3;pointer-events:none}
+#braidsStory .storybook-stage .panel button{width:100%;padding:0;border:0;display:block;background:none;cursor:zoom-in;line-height:0}
+#braidsStory .storybook-stage .panel img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;background:#fff8ef}
+#braidsStory .storybook-stage .panel figcaption{font-size:clamp(13px,2.2vw,17px);text-align:center;padding:10px 12px 12px;color:#624952;background:linear-gradient(90deg,#fff5ef,#fffdf8);min-height:45px}
+#braidsStory .storybook-stage .panel figcaption b{margin-left:9px}
+#braidsStory .storybook-enter-next{animation:storybook-enter-next .54s ease-out both;transform-origin:right center}
+#braidsStory .storybook-exit-next{animation:storybook-exit-next .54s ease-in both;transform-origin:right center}
+#braidsStory .storybook-enter-prev{animation:storybook-enter-prev .54s ease-out both;transform-origin:left center}
+#braidsStory .storybook-exit-prev{animation:storybook-exit-prev .54s ease-in both;transform-origin:left center}
+@keyframes storybook-enter-next{from{transform:rotateY(-60deg) scale(.96);filter:brightness(.8);opacity:.7}to{transform:rotateY(0) scale(1);filter:brightness(1);opacity:1}}
+@keyframes storybook-exit-next{from{transform:rotateY(0);opacity:1}to{transform:rotateY(83deg);opacity:0;filter:brightness(.72)}}
+@keyframes storybook-enter-prev{from{transform:rotateY(60deg) scale(.96);filter:brightness(.8);opacity:.7}to{transform:rotateY(0) scale(1);filter:brightness(1);opacity:1}}
+@keyframes storybook-exit-prev{from{transform:rotateY(0);opacity:1}to{transform:rotateY(-83deg);opacity:0;filter:brightness(.72)}}
+#braidsStory .storybook-controls{display:flex;align-items:center;justify-content:center;gap:clamp(10px,3vw,30px);padding:17px 2px 8px}
+#braidsStory .storybook-controls button{border:1px solid #d5b4bc;background:#fffaf9;color:#754c5b;border-radius:999px;padding:10px 17px;min-height:42px;font-weight:700;box-shadow:0 2px 7px #70505a12}
+#braidsStory .storybook-controls button:not(:disabled):hover{background:#f8dfe6}
+#braidsStory .storybook-controls button:disabled{opacity:.42;cursor:not-allowed}
+#braidsStory .storybook-progress{color:#765f67;font-weight:700;min-width:75px;white-space:nowrap;text-align:center;font-variant-numeric:tabular-nums}
+#braidsStory .storybook-dots{display:flex;align-items:center;justify-content:center;gap:11px;margin:6px auto 4px}
+#braidsStory .storybook-dots button{border:1px solid #d9aeb8;background:#f1dfe4;width:12px;height:12px;border-radius:50%;padding:0;min-width:12px;transition:background-color .2s,transform .2s}
+#braidsStory .storybook-dots button[aria-current="page"]{background:#995c6f;border-color:#995c6f;transform:scale(1.2)}
+#braidsStory .storybook-help{font-size:13px;color:#8b7272;margin:9px auto 0}
+#braidsStory .storybook-stage button:focus-visible,#braidsStory .storybook-controls button:focus-visible,#braidsStory .storybook-dots button:focus-visible{outline:3px solid #b67786;outline-offset:3px}
+@media (max-width:560px){#braidsStory .storybook-cover{padding:7px;border-radius:14px}#braidsStory .storybook-controls{gap:9px}#braidsStory .storybook-controls button{padding:9px 12px;font-size:13px}#braidsStory .storybook-progress{font-size:13px;min-width:58px}#braidsStory .storybook-stage .panel figcaption{font-size:12px;padding:9px 5px}}
+@media (prefers-reduced-motion:reduce){#braidsStory .storybook-enter-next,#braidsStory .storybook-exit-next,#braidsStory .storybook-enter-prev,#braidsStory .storybook-exit-prev{animation:none!important}}
