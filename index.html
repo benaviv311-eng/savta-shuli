@@ -5,9 +5,13 @@
 </head><body><main><h1>האלבום של סבתא שולי ❤️</h1><div class="spin"></div><p id="msg">טוענים את הזיכרונות והתמונות...</p></main>
 <script>(async()=>{try{
 const parts=await Promise.all(Array.from({length:19},async(_,i)=>{const n=String(i).padStart(2,'0');const r=await fetch('v2/parts/'+n+'.txt',{cache:'no-cache'});if(!r.ok)throw new Error('Missing album part '+n);return r.text()}));
-const html=parts.join('').replaceAll('מלין','מילן');
-const css='<link rel="stylesheet" href="milan-slideshow.css?v=1">'+'<link rel="stylesheet" href="milan-storybook.css?v=1">'+'<link rel="stylesheet" href="comic-page.css?v=1">';
-const script='<scr'+'ipt src="milan-slideshow.js?v=1"></scr'+'ipt>'+'<scr'+'ipt src="milan-storybook.js?v=1"></scr'+'ipt>'+'<scr'+'ipt src="comic-page.js?v=1"></scr'+'ipt>';
+let html=parts.join('').replaceAll('מלין','מילן');
+html=html.replace('<button data-tab="memories">','<button data-tab="comics">עמודי קומיקס</button><button data-tab="memories">');
+html=html.replace('<section id="memories" hidden>','<section id="comics" hidden><h2>עמודי קומיקס</h2><p class="sectionintro">הזיכרונות המשפחתיים שלנו, בעמודי קומיקס מאוירים. כל סיפור מקבל מקום משלו.</p><div class="comics-shelf" id="comicsShelf"></div></section><section id="memories" hidden>');
+html=html.replace("['people','memories','quotes'].includes(initial)","['people','comics','memories','quotes'].includes(initial)");
+if(!html.includes('id="comicsShelf"')||!html.includes('data-tab="comics"'))throw new Error('Comic section injection failed');
+const css='<link rel="stylesheet" href="milan-slideshow.css?v=1">'+'<link rel="stylesheet" href="milan-storybook.css?v=1">'+'<link rel="stylesheet" href="comic-page.css?v=2">';
+const script='<scr'+'ipt src="milan-slideshow.js?v=1"></scr'+'ipt>'+'<scr'+'ipt src="milan-storybook.js?v=1"></scr'+'ipt>'+'<scr'+'ipt src="comic-page.js?v=2"></scr'+'ipt>';
 const enhanced=html.replace('</head>',css+'</head>').replace('</body>',script+'</body>');
 if(!enhanced.includes('מילן חן')||!html.includes('צמה לכל יום')||!html.includes('סבתא שולי'))throw new Error('Incomplete album');
 document.open();document.write(enhanced);document.close();
