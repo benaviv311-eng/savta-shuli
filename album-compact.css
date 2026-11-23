@@ -17,6 +17,7 @@
 #quotes .album-card,
 #memoriesList .album-card{
   margin:0!important;
+  padding:0!important;
   max-width:none!important;
   min-width:0;
   width:100%;
@@ -172,3 +173,6 @@
  .album-card .album-card-body{animation:none}
  .album-card .album-card-chevron{transition:none}
 }
+#comics .album-card > .album-card-body,#quotes .album-card > .album-card-body{padding:15px 16px 20px;}
+#quotes .album-card .eyal-quote-feature,#comics .album-card .comic-onepage{margin:0;}
+@media(max-width:620px){#comics .album-card > .album-card-body,#quotes .album-card > .album-card-body{padding:12px 8px 17px;}}
