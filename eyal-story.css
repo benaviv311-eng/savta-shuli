@@ -1,0 +1,22 @@
+/* Eyal's illustrated flipbook inside the Eyal character card. All source images remain untouched. */
+#eyal .eyal-story{max-width:950px;margin:18px auto 29px;padding:clamp(12px,2vw,23px);background:linear-gradient(135deg,#fffaf2,#f8eee8);border:1px solid #e9d5c7;border-radius:18px;direction:rtl;box-shadow:0 10px 26px #60414419}
+#eyal .eyal-story-header{text-align:center;margin:0 auto 16px}
+#eyal .eyal-story-header h4{font-size:clamp(22px,4vw,30px);margin:0 0 4px;color:#764957}
+#eyal .eyal-story-header p{font-size:14px;line-height:1.7;color:#896f6c;margin:0}
+#eyal .eyal-story-stage{position:relative;border:6px solid #fdfaf4;outline:1px solid #cfb6ae;border-radius:12px;overflow:hidden;background:#fcf7ef;box-shadow:0 6px 18px #563f3c2b;touch-action:pan-y}
+#eyal .eyal-story-stage img{width:100%;height:auto;aspect-ratio:3 / 2;object-fit:contain;display:block}
+#eyal .eyal-story-photo{display:block;width:100%;background:none;border:0;padding:0;cursor:zoom-in;line-height:0}
+#eyal .eyal-story-details{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:13px 2px 0;color:#745e64;font-size:13px}
+#eyal .eyal-story-caption{font-weight:700;color:#755061;line-height:1.5}
+#eyal .eyal-story-count{white-space:nowrap;direction:ltr;unicode-bidi:isolate}
+#eyal .eyal-story-controls{display:flex;align-items:center;justify-content:center;gap:clamp(12px,4vw,27px);margin:13px auto 9px}
+#eyal .eyal-story-controls button{border:1px solid #d8b7bf;background:#fff7f8;border-radius:99px;color:#755061;padding:10px 19px;min-height:44px;font-size:15px;font-weight:700;cursor:pointer}
+#eyal .eyal-story-controls button:hover:not(:disabled){background:#f9e6e9}
+#eyal .eyal-story-controls button:disabled{opacity:.45;cursor:not-allowed}
+#eyal .eyal-story-dots{display:flex;align-items:center;justify-content:center;gap:12px;direction:rtl;margin:13px auto 4px}
+#eyal .eyal-story-dots button{width:13px;height:13px;border-radius:50%;background:#eedce1;border:1px solid #c69ca9;padding:0;cursor:pointer}
+#eyal .eyal-story-dots button[aria-current="step"]{background:#906073;border-color:#906073;transform:scale(1.16)}
+#eyal .eyal-story-note{margin:11px auto 0;text-align:center;font-size:12px;color:#9b8687}
+#eyal .eyal-story :is(button,a):focus-visible{outline:3px solid #b9788a;outline-offset:3px}
+@media(prefers-reduced-motion:no-preference){#eyal .eyal-story-stage img.eyal-story-transition{animation:eyalStoryIn .35s ease-out}@keyframes eyalStoryIn{from{opacity:.5;transform:scale(.985)}to{opacity:1;transform:scale(1)}}}
+@media(max-width:580px){#eyal .eyal-story{padding:10px;margin:15px 0}#eyal .eyal-story-controls{gap:9px}#eyal .eyal-story-controls button{padding:9px 12px;font-size:13px}}
