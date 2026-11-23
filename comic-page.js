@@ -57,7 +57,7 @@
   });
   link.append(openComics);
   story.append(link);
-  if(new URLSearchParams(location.search).has('comic')){
+  if(['1','milen'].includes(new URLSearchParams(location.search).get('comic'))){
     selectTab('comics');
     window.setTimeout(()=>feature.scrollIntoView({behavior:'auto',block:'start'}),450);
   }
