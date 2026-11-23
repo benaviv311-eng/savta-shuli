@@ -59,6 +59,16 @@ jobs:
             git commit -m "Archive Eyal's four latest approved family story panels"
             git push origin HEAD:main
           fi
+      - name: Restore Eyal's original high-resolution story panels
+        run: |
+          python scripts/upgrade_eyal_story.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stories/eyal-memory-1.png assets/stories/eyal-memory-2.png assets/stories/eyal-memory-3.png assets/stories/eyal-memory-4.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Replace blurred Eyal story panels with original full-resolution art"
+            git push origin HEAD:main
+          fi
       - name: Archive Eyal's elegant memory poster
         run: |
           python scripts/import_eyal_memory_poster.py
