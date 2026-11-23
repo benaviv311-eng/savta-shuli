@@ -1,0 +1,18 @@
+{
+  "photos": [
+    {
+      "file": "assets/eyal-casual.png",
+      "url": "https://media.canva.com/v2/image-resize/format:PNG/height:200/quality:100/uri:ifs%3A%2F%2FM%2Fbd9b1a41-e04d-48fe-aa99-c9f76551374d/watermark:F/width:133?csig=AAAAAAAAAAAAAAAAAAAAAFx3Tx5eyO9ZvhI7OCK-6mGHzI9f9X5DLSefTWIWfA2Q&exp=1795432899&osig=AAAAAAAAAAAAAAAAAAAAAF83Xg0vtOSqZXAqt2crJgfLkQwnsts4bK1Mm6rYFvsS&signer=media-rpc&token=AAIAAU0AJGJkOWIxYTQxLWUwNGQtNDhmZS1hYTk5LWM5Zjc2NTUxMzc0ZAAAAAABoggj4bj1feaZVQtqUgodGuHLcHdJulRXJqd07r55FhmtAkyJTA&x-canva-quality=thumbnail",
+      "width": 1024,
+      "height": 1536,
+      "label": "בגדים רגילים"
+    },
+    {
+      "file": "assets/eyal-plonter.png",
+      "url": "https://media.canva.com/v2/image-resize/format:PNG/height:200/quality:100/uri:ifs%3A%2F%2FM%2F76a4395c-fa26-4f98-87fb-7af3d5ffc8d7/watermark:F/width:133?csig=AAAAAAAAAAAAAAAAAAAAAKghDUK-tsywHD26VvvOZlHaotAWfisO0i9xFpSqJkb4&exp=1795434068&osig=AAAAAAAAAAAAAAAAAAAAAB5ZAmPb9vAhis2TYyyGavIhRpURVQty6XZUQGdb_zfK&signer=media-rpc&token=AAIAAU0AJDc2YTQzOTVjLWZhMjYtNGY5OC04N2ZiLTdhZjNkNWZmYzhkNwAAAAABogg1uCAe1oeFAYm4cchNe1e3PFezdBcGD-ZJ6yRQ6ofXdNSLeA&x-canva-quality=thumbnail",
+      "width": 1024,
+      "height": 1536,
+      "label": "תחפושת פלונטר"
+    }
+  ]
+}
