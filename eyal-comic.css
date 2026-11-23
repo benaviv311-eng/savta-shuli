@@ -1,0 +1,16 @@
+#comics .eyal-comic{max-width:830px;width:100%;margin:10px auto 30px;padding:19px 18px 22px;border-radius:20px;border:1px solid #dfcac4;background:linear-gradient(145deg,#fff9f1,#f8e8e1);box-shadow:0 9px 28px #583c421c;text-align:center}
+#comics .eyal-comic h3{font-size:clamp(24px,4vw,33px);margin:2px 0 4px;color:#674451}
+#comics .eyal-comic .eyal-comic-sub{color:#836c72;margin:0 0 16px;font-size:14px}
+#comics .eyal-comic-cover{display:block;width:100%;border:1px solid #c9b4a8;border-radius:12px;overflow:hidden;background:#fef9f3;line-height:0}
+#comics .eyal-comic-cover img{width:100%;height:auto;aspect-ratio:2/3;object-fit:contain;display:block}
+#comics .eyal-comic-actions{display:flex;flex-wrap:wrap;gap:9px;align-items:center;justify-content:center;margin:14px 0}
+#comics .eyal-comic-actions a{display:inline-flex;align-items:center;justify-content:center;padding:9px 18px;border-radius:30px;color:white;background:#885e6c;text-decoration:none;font-weight:bold;font-size:14px}
+#comics .eyal-comic-actions a:nth-child(2){background:#fff;color:#795461;border:1px solid #d8c1ca}
+#comics .eyal-comic details{margin:16px 0 0;border-top:1px solid #e7d1ca;padding-top:15px;text-align:right}
+#comics .eyal-comic summary{font-size:16px;font-weight:700;color:#755360;cursor:pointer;list-style-position:inside;padding:7px 2px}
+#comics .eyal-comic-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}
+#comics .eyal-comic-panels a{display:block;color:#765362;background:white;text-decoration:none;border:1px solid #e4d4cb;border-radius:9px;overflow:hidden}
+#comics .eyal-comic-panels img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}
+#comics .eyal-comic-panels span{display:block;font-size:13px;font-weight:bold;padding:7px;text-align:center}
+#comics .eyal-comic a:focus-visible,#comics .eyal-comic summary:focus-visible{outline:3px solid #b57789;outline-offset:3px}
+@media(max-width:580px){#comics .eyal-comic{padding:10px 9px 17px}#comics .eyal-comic-panels{grid-template-columns:1fr}#comics .eyal-comic-actions a{padding:9px 12px;font-size:13px}}
