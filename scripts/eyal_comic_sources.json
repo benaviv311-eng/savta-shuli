@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "order": 1,
+      "path": "assets/comics/eyal-panel-1.png",
+      "url": "https://d2jqrm6oza8nb6.cloudfront.net/datasets/a1f77ef6-c6fe-437e-923b-39d3711e545f.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiZDQ5Yjk3ZjQwZWFkNGI1OSIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5NTUwNzU3Mn0.T-bRweHnyBMle_fvATaeWc0IEopAmxv4_3MVBhZgrnM"
+    },
+    {
+      "order": 2,
+      "path": "assets/comics/eyal-panel-2.png",
+      "url": "https://d2jqrm6oza8nb6.cloudfront.net/datasets/3ea2cfc2-2995-4357-b8f5-695cce38ec99.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiYjM0YTk2NDBlM2ZjM2JlYiIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5NTU1ODU5Mn0.fnXo-AGHKTzjjHwl_oATcTp3HXGEgU6VGCxFytQaiFA"
+    },
+    {
+      "order": 3,
+      "path": "assets/comics/eyal-panel-3.png",
+      "url": "https://d2jqrm6oza8nb6.cloudfront.net/datasets/eb91af9a-7d99-4440-8b71-7e87707ecae8.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMTkzYTBhMWNmYjlmMDQwYSIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5NTUyNTI3Nn0.GYKoVHR0hmgmN6fxdjJuisEOFU-mtdtauQbQVHKx1zQ"
+    },
+    {
+      "order": 4,
+      "path": "assets/comics/eyal-panel-4.png",
+      "url": "https://d2jqrm6oza8nb6.cloudfront.net/datasets/6d23d777-fb0b-4b6b-8db1-946714518625.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiM2FkYWU2ZmMyNTUwM2IyYSIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5NTUyMzcwOH0.Zxqoa7qIe_5DcjdBBcxqX08_KcQTZx2r5BBm1kcd2IM"
+    }
+  ]
+}
