@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "order": 1,
+      "description": "כבר אין זמן... למה אתחפש?!",
+      "path": "assets/stories/eyal-memory-1.png",
+      "url": "https://d2jqrm6oza8nb6.cloudfront.net/datasets/5a1e74b0-1666-43e2-8a36-e96bff26675f.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiOTJlODNjOGNjNGE2OGI4YyIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5NTUyNTM4OH0.MhZg4DnupLFYPnF28c9an990yOdr6F8csh-jXEbHlho"
+    },
+    {
+      "order": 2,
+      "description": "אייל מגיע לסבתא עם משחק פלונטר",
+      "path": "assets/stories/eyal-memory-2.png",
+      "url": "https://d2jqrm6oza8nb6.cloudfront.net/datasets/854d22eb-776e-4c9f-958a-ea6e6884fc38.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNjM4ODNmOGQ4ZDE2ODM5NiIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5NTU4NTU0OX0.m7AkNU3HaftMfeOEtXI3XuKMfqoTLRPR0LN25rlI6VI"
+    },
+    {
+      "order": 3,
+      "description": "סבתא תופרת ואומרת פטנט!",
+      "path": "assets/stories/eyal-memory-3.png",
+      "url": "https://d2jqrm6oza8nb6.cloudfront.net/datasets/e613b862-763c-4d0a-beb6-b934c8c67399.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNWNkMjM2YWY0YzBhOGIzMSIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsImV4cCI6MTc5NTU3MTYzMX0.ClJ3BdjQ7_Spr4yE-0to0CxcLw8SUUYW2e4wLCpJv7M"
+    },
+    {
+      "order": 4,
+      "description": "אייל חוגג פטנט!",
+      "path": "assets/stories/eyal-memory-4.png",
+      "url": "https://d2jqrm6oza8nb6.cloudfront.net/datasets/a2111d84-a1a8-4fe4-90df-92c50eae7cc0.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiZTQyMjNkMmZjNmE4MWUwYiIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsImV4cCI6MTc5NTU4MDMzNX0.Za6PqhEiJN-2C3CZZEXEEYBRUm089KH4oHQw2Tbw700"
+    }
+  ]
+}
