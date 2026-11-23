@@ -48,6 +48,16 @@ jobs:
             git commit -m "Store Eyal's four approved comic panels as permanent site files"
             git push origin HEAD:main
           fi
+      - name: Archive Eyal's new memory panels in the repository
+        run: |
+          python scripts/import_eyal_story.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stories/eyal-memory-1.png assets/stories/eyal-memory-2.png assets/stories/eyal-memory-3.png assets/stories/eyal-memory-4.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive Eyal's four latest approved family story panels"
+            git push origin HEAD:main
+          fi
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
