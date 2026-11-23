@@ -3,7 +3,7 @@
 const card=document.getElementById('eyal');
 if(!card || document.getElementById('eyalStory'))return;
 const assets=[
- {src:'assets/stories/eyal-memory-1.png',label:'כבר אין זמן... למה אתחפש?!'},
+ {src:'assets/stories/eyal-memory-1-sharp.webp',label:'כבר אין זמן... למה אתחפש?!'},
  {src:'assets/stories/eyal-memory-2.png',label:'אייל מגיע לסבתא עם משחק פלונטר'},
  {src:'assets/stories/eyal-memory-3.png',label:'ההברקה של סבתא שולי: פטנט!'},
  {src:'assets/stories/eyal-memory-4.png',label:'רגע הניצחון של אייל: פטנט!'}
