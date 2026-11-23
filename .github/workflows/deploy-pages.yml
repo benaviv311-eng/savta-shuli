@@ -58,6 +58,16 @@ jobs:
             git commit -m "Archive Eyal's four latest approved family story panels"
             git push origin HEAD:main
           fi
+      - name: Archive Eyal's elegant memory poster
+        run: |
+          python scripts/import_eyal_memory_poster.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/memories/eyal-plonter-elegant.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive approved elegant poster in Eyal's character gallery"
+            git push origin HEAD:main
+          fi
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
