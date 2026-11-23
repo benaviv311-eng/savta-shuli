@@ -138,7 +138,7 @@
   }
   function packSection(section,cardSelector,params){
     if(!section)return;
-    const cards=Array.from(section.querySelectorAll(':scope > '+cardSelector));
+    const cards=Array.from(section.querySelectorAll(cardSelector.split(',').map(part=>':scope > '+part.trim()).join(', ')));
     if(!cards.length)return;
     const grid=node('div','album-card-grid');
     grid.dataset.compactReady='true';
