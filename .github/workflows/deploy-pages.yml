@@ -49,6 +49,7 @@ jobs:
             git push origin HEAD:main
           fi
       - name: Archive Eyal's new memory panels in the repository
+        continue-on-error: true
         run: |
           python scripts/import_eyal_story.py
           git config user.name "github-actions[bot]"
