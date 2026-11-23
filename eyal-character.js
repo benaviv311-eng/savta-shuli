@@ -4,8 +4,8 @@
  const milen=document.getElementById('malin');
  if(!people || !milen || document.getElementById('eyal'))return;
  const figures=[
-  {src:'assets/eyal-casual.png',title:'אייל בבגדים רגילים',short:'בגדים רגילים'},
-  {src:'assets/eyal-plonter.png',title:'אייל בתחפושת פלונטר צבעונית',short:'תחפושת פלונטר'}
+  {src:'assets/eyal-casual-highres.webp',title:'אייל בבגדים רגילים',short:'בגדים רגילים'},
+  {src:'assets/eyal-plonter-highres.webp',title:'אייל בתחפושת פלונטר צבעונית',short:'תחפושת פלונטר'}
  ];
  const card=document.createElement('article');
  card.className='person';
@@ -13,7 +13,7 @@
  card.setAttribute('aria-label','דמות: אייל');
  card.innerHTML='<div class="eyal-layout">'+
  '<div class="eyal-carousel" role="region" aria-label="גלריית שתי תמונות של אייל">'+
- ' <div class="eyal-stage"><img id="eyalHero" src="assets/eyal-casual.png" alt="איור גוף מלא של אייל בבגדים רגילים">'+
+ ' <div class="eyal-stage"><img id="eyalHero" src="assets/eyal-casual-highres.webp" alt="איור גוף מלא של אייל בבגדים רגילים">'+
  '  <button type="button" class="eyal-arrow prev" aria-label="לתמונה הקודמת">→</button>'+
  '  <button type="button" class="eyal-arrow next" aria-label="לתמונה הבאה">←</button></div>'+
  ' <div class="eyal-counter"><strong id="eyalCaption">בגדים רגילים</strong><span id="eyalCount" dir="ltr">1 / 2</span></div>'+
