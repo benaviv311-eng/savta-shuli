@@ -1,0 +1,10 @@
+/* Approved elegant memory poster, preserved unchanged, inside Eyal's profile. */
+#eyal .eyal-memory-poster{max-width:890px;margin:12px auto 28px;padding:clamp(10px,2.5vw,22px);background:linear-gradient(145deg,#fdf7ef,#f6e7dd);border:1px solid #e8d2c7;border-radius:18px;text-align:center;direction:rtl;box-shadow:0 9px 25px #54383e18}
+#eyal .eyal-memory-poster h4{font-size:clamp(22px,3vw,28px);font-weight:700;color:#714650;margin:3px 0 5px}
+#eyal .eyal-memory-poster p{font-size:14px;line-height:1.7;color:#806766;margin:0 auto 15px}
+#eyal .eyal-memory-poster-image{display:block;line-height:0;width:100%;max-width:780px;margin:0 auto;background:#eee2d4;border:1px solid #e6d4c4;border-radius:13px;overflow:hidden;box-shadow:0 8px 28px #6e4d4426;cursor:zoom-in}
+#eyal .eyal-memory-poster-image img{width:100%;height:auto;display:block;object-fit:contain}
+#eyal .eyal-memory-poster a:focus-visible{outline:3px solid #b77686;outline-offset:3px}
+#eyal .eyal-memory-poster-link{margin:15px auto 1px;display:inline-block;padding:9px 17px;border-radius:28px;border:1px solid #cdaeb1;background:#fff9f8;text-decoration:none;font-size:14px;color:#815862;font-weight:700}
+#eyal .eyal-memory-poster-link:hover{background:#f8e5e8}
+@media(max-width:580px){#eyal .eyal-memory-poster{margin:12px 8px 24px;padding:10px}#eyal .eyal-memory-poster-image{border-radius:9px}}
