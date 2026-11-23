@@ -1,0 +1,52 @@
+/* Featured family catchphrase: "פטנט!" — uses the original approved artwork */
+#quotes .eyal-quote-feature {
+  max-width: 840px;
+  margin: 22px auto 30px;
+  padding: clamp(12px, 2.4vw, 24px);
+  background: linear-gradient(145deg, #fffaf1, #faeee6);
+  border: 1px solid #e6cdc3;
+  border-radius: 20px;
+  box-shadow: 0 8px 26px rgba(87, 57, 59, .10);
+  text-align: center;
+  direction: rtl;
+}
+#quotes .eyal-quote-feature small {
+  display: block;
+  margin: 0 0 3px;
+  font-size: 13px;
+  color: #956e73;
+  font-weight: 600;
+}
+#quotes .eyal-quote-feature h3 {
+  color: #7b415d;
+  font-size: clamp(26px, 4.5vw, 38px);
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+#quotes .eyal-quote-art {
+  display: block;
+  border: 1px solid #e6c9b9;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  line-height: 0;
+  background: #f8f2e9;
+  cursor: zoom-in;
+  text-decoration: none;
+}
+#quotes .eyal-quote-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
+#quotes .eyal-quote-hint {
+  font-size: 13px;
+  margin: 10px 0 0;
+  color: #806c6e;
+}
+#quotes .eyal-quote-feature a:focus-visible {
+  outline: 3px solid #b87487;
+  outline-offset: 4px;
+}
