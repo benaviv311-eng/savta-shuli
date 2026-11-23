@@ -1,0 +1,27 @@
+/* Eyal's self-contained character page. Portraits are displayed without cropping. */
+#eyal.person{overflow:visible;border-color:#e6d3c5}
+#eyal .eyal-layout{display:grid;grid-template-columns:minmax(235px,345px) minmax(0,1fr);gap:clamp(14px,3vw,35px);padding:clamp(15px,2.7vw,29px);align-items:center}
+#eyal .eyal-carousel{min-width:0;direction:rtl}
+#eyal .eyal-stage{position:relative;border-radius:18px;overflow:hidden;background:radial-gradient(ellipse at 50% 48%,#efd9c9 0%,#e8dcd3 60%,#ede1d6 100%);box-shadow:inset 0 0 0 1px #e8cbbb}
+#eyal .eyal-stage img{height:410px;width:100%;object-fit:contain;display:block;transition:opacity .22s ease-in-out}
+#eyal .eyal-stage .eyal-arrow{position:absolute;top:48%;transform:translateY(-50%);height:40px;width:40px;display:flex;align-items:center;justify-content:center;border:1px solid #d6bbb0;border-radius:50%;background:#fffdf6ec;color:#624450;font-size:23px;z-index:2;box-shadow:0 3px 12px #2e1c1d1d}
+#eyal .eyal-arrow.prev{right:10px}#eyal .eyal-arrow.next{left:10px}
+#eyal .eyal-arrow:hover{background:#fff}
+#eyal .eyal-counter{font-size:13px;color:#86726c;margin-top:10px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+#eyal .eyal-counter strong{color:#654951}
+#eyal .eyal-dots{display:flex;justify-content:center;gap:12px;padding-top:10px}
+#eyal .eyal-dots button{border:1px solid #c6a6ae;width:13px;height:13px;border-radius:99px;background:#eee0dd;padding:0}
+#eyal .eyal-dots button[aria-current="true"]{background:#8f6471;border-color:#8f6471}
+#eyal .eyal-identity small{color:#926577;font-size:13px;font-weight:700}
+#eyal .eyal-identity h3{font-size:clamp(32px,5vw,45px);font-weight:500;margin:5px 0 12px;color:#503a36}
+#eyal .eyal-identity p{font-size:clamp(14px,1.7vw,17px);line-height:1.85;color:#746661}
+#eyal .eyal-labels{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+#eyal .eyal-labels span{padding:5px 11px;border-radius:40px;border:1px solid #ddc4c5;background:#fff7f5;color:#87636a;font-size:13px}
+#eyal .eyal-highlight{padding:16px 18px;border-radius:15px;border:1px solid #ebd6bf;background:linear-gradient(120deg,#fff8ee,#fcf1e9);text-align:right}
+#eyal .eyal-highlight h4{margin:0 0 6px;font-size:19px;color:#82545c}
+#eyal .eyal-highlight p{font-size:15px;margin:0;line-height:1.8}
+#eyal .eyal-link{display:inline-block;border:1px solid #d4b6b9;background:#fbebef;color:#775462;border-radius:22px;padding:8px 15px;text-decoration:none;font-size:13px;margin-top:16px}
+#eyal .eyal-link:hover{background:#f5dfe7}
+#eyal button:focus-visible,#eyal a:focus-visible{outline:3px solid #c38da0;outline-offset:2px}
+@media(max-width:720px){#eyal .eyal-layout{grid-template-columns:1fr}#eyal .eyal-carousel{width:100%;max-width:420px;margin:auto}#eyal .eyal-stage img{height:400px}#eyal .eyal-identity h3{font-size:34px}}
+@media(prefers-reduced-motion:reduce){#eyal .eyal-stage img{transition:none}}
