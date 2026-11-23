@@ -49,7 +49,7 @@
  carousel.addEventListener('focusin',()=>paused=true);
  carousel.addEventListener('focusout',event=>{if(!carousel.contains(event.relatedTarget))paused=false});
  const link=card.querySelector('#eyalComicsLink');
- link.addEventListener('click',event=>{event.preventDefault();if(typeof selectTab==='function')selectTab('comics')});
+ link.addEventListener('click',event=>{event.preventDefault();if(typeof selectTab==='function')selectTab('comics');window.setTimeout(()=>document.getElementById('eyal-comic')?.scrollIntoView({behavior:'smooth',block:'start'}),80)});
  if(!reduceMotion){window.setInterval(()=>{if(!paused&&!document.hidden&&!document.getElementById('people')?.hidden)select(index+1)},6000)}
  if(new URLSearchParams(location.search).get('person')==='eyal'){
    if(typeof selectTab==='function')selectTab('people');
