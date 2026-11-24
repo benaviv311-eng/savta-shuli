@@ -1,0 +1,16 @@
+{
+  "photos": [
+    {
+      "order": 1,
+      "name": "חולצה לבנה",
+      "file": "assets/ben-child-white.png",
+      "url": "https://d2jqrm6oza8nb6.cloudfront.net/datasets/539802e2-6025-465f-87f1-552e2fd787bd.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMTAwZTcwOTFiODQ4MzUwNCIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5NTYzNzc3N30.c1lsS6F-QnS4b5MMgIAwjUBk6ZACj0l16puCemgYyz4"
+    },
+    {
+      "order": 2,
+      "name": "חולצה כחולה",
+      "file": "assets/ben-child-blue.png",
+      "url": "https://d2jqrm6oza8nb6.cloudfront.net/datasets/ec874a51-1650-4211-abb6-230633e06410.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMzlhNTM4MDAyOTdjMDRkZCIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5NTYxODY4OH0.OW0OKSRISJIB6syLi9FIdAY1AYzzcLbjIeN536ARGXA"
+    }
+  ]
+}
