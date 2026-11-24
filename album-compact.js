@@ -165,7 +165,7 @@
         groups:[
           {id:'character',label:'דמות ותמונות',selectors:['.person-head','.eyal-layout','.ben-layout']},
           {id:'memory',label:'זיכרון',selectors:['.eyal-memory-poster']},
-          {id:'comic',label:'ספרון קומיקס',selectors:['#braidsStory','#eyalStory']}
+          {id:'comic',label:'ספרון קומיקס',selectors:['#braidsStory','#eyalStory','#benKneidlachStory']}
         ]
       };
     });
@@ -174,8 +174,8 @@
   const shelf=document.getElementById('comicsShelf');
   if(shelf){
     packSection(shelf,'section, article',card=>({
-      id:card.id,title:card.id==='eyal-comic'?'הפטנט של סבתא':'צמה לכל יום',
-      subtitle:card.id==='eyal-comic'?'הסיפור של אייל וסבתא שולי':'הזיכרון של מילן וסבתא שולי',
+      id:card.id,title:card.id==='ben-kneidlach-comic'?'הקניידלך של סבתא שולי':card.id==='eyal-comic'?'הפטנט של סבתא':'צמה לכל יום',
+      subtitle:card.id==='ben-kneidlach-comic'?'בן וסבתא מכינים קניידלך · העולם הוא שלך!':card.id==='eyal-comic'?'הסיפור של אייל וסבתא שולי':'הזיכרון של מילן וסבתא שולי',
       source:card.querySelector('img')?.getAttribute('src'),
       kicker:'עמוד קומיקס',groups:[]
     }));
@@ -216,6 +216,7 @@
   else if(q.get('person')==='shuli')open('shuli');
   else if(q.get('person')==='ben')open('ben','character');
   if(q.get('comic')==='eyal')open('eyal-comic');
+  if(q.get('comic')==='ben')open('ben-kneidlach-comic');
   if(['1','milen','malin'].includes(q.get('comic')))open('milenComicPage');
   document.getElementById('gotoStory')?.addEventListener('click',()=>open('malin','comic'),true);
   document.querySelector('#comics .comic-story-link button')?.addEventListener('click',()=>open('malin','comic'),true);
