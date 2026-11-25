@@ -99,6 +99,16 @@ jobs:
             git commit -m "Archive approved Ben and Grandma Shuli kneidlach comic"
             git push origin HEAD:main
           fi
+      - name: Archive Yuval's approved full-body character portrait
+        run: |
+          python scripts/import_yuval_portrait.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/yuval-character.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive approved Yuval character portrait"
+            git push origin HEAD:main
+          fi
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
