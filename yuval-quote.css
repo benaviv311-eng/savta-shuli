@@ -1,0 +1,15 @@
+#quotes .yuval-quote-feature{
+  max-width:850px;margin:22px auto 30px;padding:clamp(12px,2.4vw,24px);
+  background:linear-gradient(145deg,#fffaf2,#f8ece2);
+  border:1px solid #e5d0c5;border-radius:20px;
+  box-shadow:0 8px 26px rgba(87,57,59,.10);
+  text-align:center;direction:rtl;
+}
+#quotes .yuval-quote-feature small{display:block;font-size:13px;color:#92737b;font-weight:650}
+#quotes .yuval-quote-feature h3{color:#7e4e5e;font-size:clamp(22px,3.4vw,35px);line-height:1.35;margin:6px 0 16px}
+#quotes .yuval-quote-art{display:block;width:100%;line-height:0;border-radius:12px;overflow:hidden;border:1px solid #e3cebd;background:#fffaf4;cursor:zoom-in}
+#quotes .yuval-quote-art img{display:block;width:100%;height:auto;aspect-ratio:3 / 2;object-fit:contain}
+#quotes .yuval-quote-hint{font-size:13px;color:#7c696b;margin:11px 0 0}
+#quotes .yuval-quote-feature a:focus-visible,#yuval .yuval-quote-shortcut:focus-visible{outline:3px solid #b88495;outline-offset:4px}
+#yuval .yuval-quote-shortcut{display:inline-flex;align-items:center;margin-top:7px;border:1px solid #d8bcc5;border-radius:23px;background:#fff9f7;color:#815868;font-size:14px;font-weight:700;padding:10px 15px;text-decoration:none}
+@media(max-width:620px){#quotes .yuval-quote-feature{padding:10px 8px}}
