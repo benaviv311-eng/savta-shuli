@@ -183,10 +183,10 @@
   }
   const quotes=document.getElementById('quotes');
   if(quotes){
-    packSection(quotes,'.quotehero, .eyal-quote-feature',card=>{
+    packSection(quotes,'.quotehero, .eyal-quote-feature, .yuval-quote-feature',card=>{
       if(!card.id)card.id='braids-quote';
       return {id:card.id,title:card.querySelector('h3')?.textContent?.trim()||'משפטי מחץ',
-        subtitle:card.id==='eyal-patent-quote'?'הפטנט של סבתא ואייל':'צמה לכל יום · מילן וסבתא שולי',
+        subtitle:card.id==='yuval-remark-quote'?'יובל גאה בסבתא שולי שהרצתה בכיתתו':card.id==='eyal-patent-quote'?'הפטנט של סבתא ואייל':'צמה לכל יום · מילן וסבתא שולי',
         source:card.querySelector('img')?.getAttribute('src'),kicker:'משפטי המחץ',groups:[]};
     });
   }
@@ -217,6 +217,7 @@
   else if(q.get('person')==='shuli')open('shuli');
   else if(q.get('person')==='ben')open('ben','character');
   else if(q.get('person')==='yuval')open('yuval','character');
+  if(q.get('quote')==='yuval')open('yuval-remark-quote');
   if(q.get('comic')==='eyal')open('eyal-comic');
   if(q.get('comic')==='ben')open('ben-kneidlach-comic');
   if(['1','milen','malin'].includes(q.get('comic')))open('milenComicPage');
