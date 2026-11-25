@@ -109,6 +109,16 @@ jobs:
             git commit -m "Archive approved Yuval character portrait"
             git push origin HEAD:main
           fi
+      - name: Archive approved Yuval classroom catchphrase
+        run: |
+          python scripts/import_yuval_quote.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/quotes/yuval-grandma-remark.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive Yuval's approved quote illustration"
+            git push origin HEAD:main
+          fi
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
