@@ -156,14 +156,15 @@
       if(!id){id='shuli';card.id=id;}
       const eyal=id==='eyal';
       const ben=id==='ben';
+      const yuval=id==='yuval';
       const milen=id==='malin';
-      const title=eyal?'אייל':ben?'בן':milen?'מילן חן':'סבתא שולי';
-      const image=card.querySelector(eyal?'#eyalHero':ben?'#benHero':'img.person-cover');
-      const description=eyal?'הפטנט של סבתא שולי · תמונות וזיכרונות':ben?'בן בילדותו · תמונות וזיכרונות':milen?'צמה לכל יום · רגע מיוחד עם סבתא':'הלב של האלבום המשפחתי';
+      const title=eyal?'אייל':ben?'בן':yuval?'יובל':milen?'מילן חן':'סבתא שולי';
+      const image=card.querySelector(eyal?'#eyalHero':ben?'#benHero':yuval?'#yuvalHero':'img.person-cover');
+      const description=eyal?'הפטנט של סבתא שולי · תמונות וזיכרונות':ben?'בן בילדותו · תמונות וזיכרונות':yuval?'הסבתא שבאה להרצות בכיתה · זיכרון של גאווה':milen?'צמה לכל יום · רגע מיוחד עם סבתא':'הלב של האלבום המשפחתי';
       return {
         id,title,subtitle:description,source:image?.getAttribute('src'),kicker:'הדמויות שלנו',
         groups:[
-          {id:'character',label:'דמות ותמונות',selectors:['.person-head','.eyal-layout','.ben-layout']},
+          {id:'character',label:'דמות ותמונות',selectors:['.person-head','.eyal-layout','.ben-layout','.yuval-layout']},
           {id:'memory',label:'זיכרון',selectors:['.eyal-memory-poster']},
           {id:'comic',label:'ספרון קומיקס',selectors:['#braidsStory','#eyalStory','#benKneidlachStory']}
         ]
@@ -215,6 +216,7 @@
   else if(['malin','milan','milen'].includes(q.get('person')))open('malin','character');
   else if(q.get('person')==='shuli')open('shuli');
   else if(q.get('person')==='ben')open('ben','character');
+  else if(q.get('person')==='yuval')open('yuval','character');
   if(q.get('comic')==='eyal')open('eyal-comic');
   if(q.get('comic')==='ben')open('ben-kneidlach-comic');
   if(['1','milen','malin'].includes(q.get('comic')))open('milenComicPage');
@@ -223,6 +225,6 @@
   document.querySelector('#braidsStory .comic-section-link button')?.addEventListener('click',()=>open('milenComicPage'),true);
   document.getElementById('eyalComicsLink')?.addEventListener('click',()=>open('eyal-comic'),true);
   window.addEventListener('hashchange',()=>{
-    if(location.hash==='#people'&&q.get('person'))open(['eyal','ben','shuli'].includes(q.get('person'))?q.get('person'):'malin');
+    if(location.hash==='#people'&&q.get('person'))open(['eyal','ben','yuval','shuli'].includes(q.get('person'))?q.get('person'):'malin');
   });
 })();
