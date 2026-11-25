@@ -1,0 +1,10 @@
+#yuval .yuval-layout{display:grid;grid-template-columns:minmax(220px,350px) minmax(0,1fr);align-items:center;gap:clamp(18px,3vw,38px);padding:clamp(16px,3vw,32px);direction:rtl}
+#yuval .yuval-portrait{margin:0;min-width:0;border-radius:16px;background:radial-gradient(ellipse at 50% 45%,#fbebd5,#f1e4d4);box-shadow:inset 0 0 0 1px #ead9c9;overflow:hidden}
+#yuval .yuval-portrait img{display:block;width:100%;height:430px;object-fit:contain}
+#yuval .yuval-description{min-width:0;text-align:right}
+#yuval .yuval-description small{color:#9b6d7b;font-weight:650}
+#yuval .yuval-description h3{color:#684752;font-size:clamp(29px,4vw,45px);margin:8px 0}
+#yuval .yuval-description p{max-width:45ch;color:#766568;line-height:1.8;font-size:16px}
+#yuval .yuval-description blockquote{margin:20px 0;padding:14px 17px;background:#fff7ef;border-right:3px solid #b98d76;color:#85515d;font-size:clamp(18px,2.3vw,23px);font-weight:700;line-height:1.5}
+#yuval .yuval-description .yuval-note{font-size:13px;color:#927e7c}
+@media(max-width:720px){#yuval .yuval-layout{grid-template-columns:1fr}#yuval .yuval-portrait{width:100%;max-width:400px;margin:auto}#yuval .yuval-portrait img{height:380px}}
